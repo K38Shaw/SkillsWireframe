@@ -2,3 +2,464 @@
     font-size: 1.5em;
     line-height: 1.6em;
 }
+body{
+    margin: 0;
+}
+.header{
+    position: absolute;
+    width: 100vw;
+    z-index: 1;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.line{
+    width: 90vw;
+    height: 3px;
+    background-color: aliceblue;
+    z-index: 2;
+    position: absolute;
+    top: 13vh;
+    border-radius: 100px;
+    left: 5%;
+    right: 5%;
+
+    box-shadow: 0px 10px 40px 10px rgb(255, 255, 255) ;
+}
+.logo{
+    display: block;
+    width: 13vw;
+    height: 8vh;
+}
+.headerNav{
+    display: flex;
+    flex-direction: row;
+}
+.headerNav p{
+    margin: 1vw;
+    color: yellow;
+    font-size: 25px;
+    padding: 0.5vw 1.5vw;
+    
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+header button{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+/* section 1 */
+
+.section1{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url("/assets/client-assets/images/Oil/DALL·E\ 2023-05-23\ 11.00.35\ -\ 16\ 9\ oil\ painting\ of\ a\ forest\ with\ a\ clearing\ and\ pond\ to\ one\ side.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 30s infinite ease-in-out;
+}
+@keyframes change {
+    0%{
+        background-image: url("/assets/client-assets/images/Oil/DALL·E\ 2023-05-23\ 11.02.21.png");
+    }
+    16%{
+        background-image: url("/assets/client-assets/images/Oil/DALL·E\ 2023-05-23\ 11.00.35\ -\ 16\ 9\ oil\ painting\ of\ a\ forest\ with\ a\ clearing\ and\ pond\ to\ one\ side.png");
+    }
+    33%{
+        background-image: url("/assets/client-assets/images/Oil/DALL·E\ 2023-05-23\ 11.14.21\ -\ 16\ 9\ ratio\ oil\ painting\ of\ an\ open\ pin\ sand\ mine\ truning\ back\ into\ wild\ land.png");
+    }
+    49%{
+        background-image: url("/assets/client-assets/images/Oil/DALL·E\ 2023-05-23\ 13.18.43\ -\ 16\ 9\ ratio\ oil\ painting\ of\ farmland\ being\ turned\ into\ wildflower\ prarie\ meadow\ wildland.png");
+    }
+    66%{
+        background-image: url("/assets/client-assets/images/Oil/DALL·E\ 2023-05-23\ 13.18.56\ -\ 16\ 9\ ratio\ oil\ painting\ of\ farmland\ being\ turned\ into\ wildflower\ prarie\ meadow\ wildland.png");
+    }
+    83%{
+        background-image: url("/assets/client-assets/images/Oil/DALL·E\ 2023-05-23\ 16.33.56.png");
+    }
+    100%{
+        background-image: url("/assets/client-assets/images/Oil/DALL·E\ 2023-05-23\ 16.37.50\ -\ Oil\ painting\ of\ forest\ with\ a\ clearing\ and\ pond\ in\ the\ center.png");
+    } 
+}
+
+.section1 .content{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(50% 50%);
+    color: yellow;
+    padding: 20px;
+    
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.section1 .content h3{
+    font-size: 40px;
+    margin: 10px 0px;
+}
+.section1 .content p{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+/* section 2 */
+.section2{
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    overflow: hidden;
+    position: relative;
+    background-image: url("/assets/client-assets/images/Photos/s-n-pattenden-YLLDkt3VHmc-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 5px 0px;
+}
+.section2 button{
+    width: 20vw;
+    height: 25px;
+    margin-top: 10vh;
+}
+.section2 .section2Top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    text-align: center;
+}
+.section2Top div{
+    width: 30vw;
+    height: 30vh;
+    background: rgba( 255, 255, 0, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    color: rgb(255, 255, 0);
+    font-size: 2em;
+}
+
+/* section 3 */
+
+.section3{
+    width: 100vw;
+    height: 160vh;
+    background-image: url("/assets/client-assets/images/Photos/marc-pell-oWRVjFQIwAY-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.section3Top{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.section3Top .content{
+    width: 50vw;
+    margin: 30px;
+}
+.imageTop{
+    background-image: url("/assets/client-assets/images/Photos/alaeddin-hallak-D4Cwd-xwETI-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 40vw;
+    height: 40vh;
+    border-radius: 30px;
+    animation: change1 20s infinite ease-in;
+}
+
+.section3Bottom{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.section3Bottom .content{
+    width: 50vw;
+    margin: 30px;
+}
+.imageBottom{
+    background-image: url("/assets/client-assets/images/Photos/curioso-photography-pqN82ZS6OsI-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 40vw;
+    height: 40vh;
+    border-radius: 30px;
+    animation: change2 20s infinite ease-in-out;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+    padding: 0px 5vw;
+
+    background: rgba( 21, 255, 0, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+footer img{
+    width: 13vw;
+    height: 8vh;
+}
+
+@keyframes change1 {
+    0%{
+        background-image: url("/assets/client-assets/images/Photos/alaeddin-hallak-D4Cwd-xwETI-unsplash.jpg");
+    }
+    50%{
+        background-image: url("/assets/client-assets/images/Photos/usgs-Yhx6-WibC3I-unsplash.jpg");
+    }
+    100%{
+        background-image: url("/assets/client-assets/images/Photos/alaeddin-hallak-D4Cwd-xwETI-unsplash.jpg");
+    }
+}
+@keyframes change2 {
+    0%{
+        background-image: url("/assets/client-assets/images/Photos/curioso-photography-pqN82ZS6OsI-unsplash.jpg");
+    }
+    50%{
+        background-image: url("/assets/client-assets/images/Photos/roya-ann-miller-BkTsP32Dfnc-unsplash.jpg");
+    }
+    100%{
+        background-image: url("/assets/client-assets/images/Photos/curioso-photography-pqN82ZS6OsI-unsplash.jpg");
+    }
+}
+
+
+/* tablet version */
+
+@media only screen and (max-width: 900px) {
+    .logo{
+        display: block;
+        width: 10vw;
+        height: 6vh;
+    }
+    .headerNav p{
+        margin: 1vw;
+        color: yellow;
+        font-size: 15px;
+        padding: 0.5vw 1.5vw;
+
+    }
+    header button{
+        height: 30px;
+    }
+
+    /* section1 */
+    .section1 .content{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        transform: translate(50% 50%);
+        color: yellow;
+        padding: 20px;
+        
+        background: rgba( 255, 255, 255, 0.15 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 1.5px );
+        -webkit-backdrop-filter: blur( 1.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+
+    /* section 2 */
+    .section2Top div{
+        font-size: 1.4em;
+    }
+    .section2 button{
+        width: 20vw;
+        height: 25px;
+        margin-top: 10vh;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .line{
+        width: 90vw;
+        height: 3px;
+        background-color: aliceblue;
+        z-index: 2;
+        position: absolute;
+        top: 19vh;
+        border-radius: 100px;
+        left: 5%;
+        right: 5%;
+    
+        box-shadow: 0px 10px 40px 10px rgb(255, 255, 255) ;
+    }
+    .logo{
+        display: block;
+        width: 30vw;
+        height: 8vh;
+    }
+    .headerNav{
+        position: absolute;
+        top: 11vh;
+    }
+    .headerNav p{
+        margin: 1vw;
+        color: yellow;
+        font-size: 20px;
+        padding: 0.5vw 1.5vw;
+    }
+    header button{
+        height: 35px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* section 1 */
+
+    .section1 .content{
+        position: absolute;
+        top: 25%;
+        left: 0%;
+        transform: translate(50% 50%);
+        color: yellow;
+        padding: 20px;
+        width: 100vw;
+;
+    }
+    
+    /* section 2 */
+
+    .section2{
+        width: 100vw;
+        height: 90vh;
+    }
+    .section2 button{
+        width: 150px;
+        height: 25px;
+        margin-top: 10vh;
+    }
+    .section2 .section2Top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        width: 100vw;
+        text-align: center;
+    }
+    .section2Top div{
+        width: 60vw;
+        height: 20vh;
+        margin: 10px;
+    
+        color: rgb(255, 255, 0);
+        font-size: 1em;
+    }
+
+    /* section 3 */
+    .section3Top{
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section3Top .content{
+        width: 95vw;
+        margin: 30px;
+        font-size: .9em;
+        margin-top: 0px;
+    }
+    .imageTop{
+        width: 95vw;
+        height: 60vh;
+        border-radius: 10px;
+        margin-top: 10px;
+        animation: change1 20s infinite ease-in;
+    }
+
+    .section3Bottom{
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section3Bottom .content{
+        width: 95vw;
+        margin: 30px;
+        font-size: .9em;
+        margin-top: 0px;
+    }
+    .imageBottom{
+        width: 95vw;
+        height: 60vh;
+        border-radius: 10px;
+        margin-top: 10px;
+        animation: change1 20s infinite ease-in;
+    }
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        height: 15vh;
+        align-items: center;
+        padding: 0px 5vw;
+    
+        font-size: .7em;
+    }
+    footer img{
+        width: 35vw;
+        height: 8vh;
+        margin: 20px;
+    }
+    
+}
