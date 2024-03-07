@@ -1,4 +1,142 @@
-.checkmarks{
-    font-size: 1.5em;
-    line-height: 1.6em;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+header,
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+
+section {
+    margin: 20px 0;
+}
+
+section div {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section div + div {
+    margin-top: 20px;
+}
+
+
+h3 {
+    color: #007bff;
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul {
+    list-style-position: inside;
+   
+}
+
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+button {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+
+.checkmarks {
+    color: green;
+    font-weight: bold;
+}
+
+.work-done-check-list li {
+    margin: 10px 0;
+}
+
+
+@media (min-width: 768px) {
+    section div {
+        padding: 20px 40px;
+    }
+}
+@media (min-width: 900px) {
+    
+    .topPart {
+display: flex;
+flex-direction: row;
+padding:15px;
+align-items:center;
+
+    }
+    
+    .topPart :nth-child(1) {
+        border-radius: 25px;
+        width: 350px;
+        padding: 10px;
+        margin-right: 30px;
+        
+        
+    
+    }
+    .topPart :nth-child(2) {
+        border-radius: 25px;
+        width: 350px;
+        padding: 10px;
+        margin-right: 30px;
+        
+
+    }
+    .topPart :nth-child(3) {
+        border-radius: 25px;
+        width: 350px;
+        
+
+    }
+
+img{
+  
+    float: left;
+    width: 40%;
+    height: 270px;
+    padding: 10px;
+}
+ 
